@@ -1,2 +1,8 @@
 vendor/
 composer.lock
+.updatedhyperexecute.yaml
+.hyperexecute/
+hyperexecute
+hyperexecute-cli.log
+.DS_Store
+logs/

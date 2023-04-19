@@ -1,0 +1,26 @@
+---
+version: 0.1
+globalTimeout: 150
+testSuiteTimeout: 150
+testSuiteStep: 150
+
+runson: linux
+
+autosplit: true
+retryOnFailure: false
+
+maxRetries: 0
+concurrency: 1
+
+pre:
+  - composer install
+
+post:
+  - cat hyperexecute.yaml
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: echo "dummy"
+
+testRunnerCommand: composer single
